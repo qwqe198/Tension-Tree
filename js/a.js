@@ -53,7 +53,7 @@ addLayer("a", {
         },
         3: {
             requirementDescription: "3 Get 2 base point gain",
-            effectDescription: "8. Ultra-Fast Production You gain 1e-9x Tension Points per second",
+            effectDescription: "8. Ultra-Fast Production You gain 1e-9 billion Tension Points per second",
             done() { return layers.p.eff().gte(2) }
         },
         4: {
@@ -378,4 +378,5 @@ addLayer("a", {
         { key: "a", description: "a: Perform Impact Reset", onPress() { if (canReset(this.layer)) doReset(this.layer) } },
     ],
     layerShown() { return hasUpgrade("p",25) || player.a.points.gte(1) }
+
 })
